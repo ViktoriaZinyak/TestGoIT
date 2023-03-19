@@ -1,35 +1,34 @@
 import PropTypes from 'prop-types';
+import avatar from '../../images/Hansel.png';
 import {
   Card,
-  Wrap,
+  BackgrWrap,
   Avatar,
-  Name,
-  Tag,
-  Location,
   Stats,
   StatsItem,
   Label,
   Quantity,
+  AvatarWrap,
+  AvatarBorder,
+  Box,
+  StatsData,
 } from './Profile.styled';
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({ username, tag, location, stats }) => {
   return (
     <Card>
-      <Wrap></Wrap>
+      <BackgrWrap></BackgrWrap>
+      <Box>
+        <AvatarBorder>
+          <AvatarWrap>
+            <Avatar src={avatar} alt="User avatar" />
+          </AvatarWrap>
+        </AvatarBorder>
+      </Box>
 
       <Stats>
-        <StatsItem>
-          <Label>Followers</Label>
-          <Quantity>{stats.followers}</Quantity>
-        </StatsItem>
-        <StatsItem>
-          <Label>Views</Label>
-          <Quantity>{stats.views}</Quantity>
-        </StatsItem>
-        <StatsItem>
-          <Label>Likes</Label>
-          <Quantity>{stats.likes}</Quantity>
-        </StatsItem>
+        <StatsData> 777 tweets</StatsData>
+        <StatsData> 100,500 Followers</StatsData>
       </Stats>
     </Card>
   );

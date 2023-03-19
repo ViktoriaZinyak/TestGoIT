@@ -1,5 +1,4 @@
 import user from '../../user.json';
-import stats from '../../stats.json';
 
 import { Profile } from '../Profile/Profile';
 import { Container } from './App.styled';
