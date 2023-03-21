@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png"
+  },
+  {
+    "id": 2,
+    "user": "Lady Gaga",
+    "tweets": 999,
+    "followers": 1049320,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png"
+  },
+  {
+    "id": 3,
+    "user": "Beyoncé",
+    "tweets": 555,
+    "followers": 1656776,
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png"
+  }
+]

@@ -1,17 +1,10 @@
-import user from '../../user.json';
-
-import { Profile } from '../Profile/Profile';
+import { ProfileList } from '../ProfileList/ProfileList';
 import { Container } from './App.styled';
 
 export const App = () => {
   return (
     <Container>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        stats={user.stats}
-      />
+      <ProfileList />
     </Container>
   );
 };

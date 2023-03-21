@@ -2,9 +2,11 @@ import styled from '@emotion/styled';
 import imageBg from '../../images/bg.png';
 import logo from '../../images/goit.png';
 
-export const Card = styled.div`
+export const Card = styled.li`
+  text-align: center;
+  padding-bottom: 36px;
   width: 380px;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 20px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   background: linear-gradient(
@@ -13,6 +15,7 @@ export const Card = styled.div`
     #5736a3 54.28%,
     #4b2a99 78.99%
   );
+  list-style: none;
 `;
 
 export const BackgrWrap = styled.div`
@@ -21,13 +24,11 @@ export const BackgrWrap = styled.div`
   background-size: 308px, 76px;
   background-repeat: no-repeat;
   background-position: center, top 20px left 20px;
-  /* border-bottom: 8px solid #ebd8ff;
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
-    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff; */
 `;
 
 export const Box = styled.div`
   display: flex;
+  margin-bottom: 62px;
   align-items: center;
   justify-content: center;
   height: 8px;
@@ -60,19 +61,42 @@ export const Avatar = styled.img`
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+  width: 62px;
+  height: 62px;
 `;
 
-export const Stats = styled.div`
+export const Stats = styled.ul`
+  list-style: none;
+  margin-bottom: 26px;
   padding-top: 62px;
   text-align: center;
 `;
 
 export const StatsData = styled.p`
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
   color: #ebd8ff;
   margin: 0;
-  /* font-family: 'Montserrat'; */
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+`;
+
+export const Button = styled.button`
+  width: 196px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #373737;
+  padding: 14px 56px;
+  background-color: ${p => (p.buttonStatus === true ? '#5CD3A8' : '#ebd8ff')};
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.3px;
+  border: none;
+  &:hover {
+    background-color: #eed0ef;
+  }
 `;
