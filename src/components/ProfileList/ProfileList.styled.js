@@ -65,13 +65,6 @@ export const Avatar = styled.img`
   height: 62px;
 `;
 
-export const Stats = styled.ul`
-  list-style: none;
-  margin-bottom: 26px;
-  padding-top: 62px;
-  text-align: center;
-`;
-
 export const StatsData = styled.p`
   &:not(:last-child) {
     margin-bottom: 16px;
